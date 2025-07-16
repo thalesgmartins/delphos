@@ -13,20 +13,16 @@
 #define ENCODER_RESOLUTION 4
 
 //
-// Botão do Rotary Encoder (Configurado como um DIP Switch)
-//
-#ifndef DIP_SWITCH_ENABLE
-    #define DIP_SWITCH_ENABLE
-#endif
-
-#define DIP_SWITCH_PINS { F5 } // Configura os pinos em que os 'botões' estão conectados
-
-//
 // Display OLED
 //
 #ifndef OLED_ENABLE
     #define OLED_ENABLE
 #endif
 
+#ifndef OLED_DRIVER_ENABLE
+    #define OLED_DRIVER_ENABLE
+#endif
+
 // Configurações do Display OLED
 #define OLED_DISPLAY_128x64
+#define OLED_TIMEOUT 0
